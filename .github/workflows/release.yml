@@ -11,6 +11,7 @@ permissions:
 jobs:
   build:
     strategy:
+      fail-fast: false
       matrix:
         include:
           - os: ubuntu-latest
@@ -31,9 +32,6 @@ jobs:
           - os: windows-latest
             target: bun-windows-x64
             artifact: capsolver-windows-x64.exe
-          - os: windows-latest
-            target: bun-windows-x64-baseline
-            artifact: capsolver-windows-x64-baseline.exe
 
     runs-on: ${{ matrix.os }}
     steps:
