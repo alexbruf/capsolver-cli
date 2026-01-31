@@ -17,6 +17,9 @@ jobs:
             target: bun-linux-x64
             artifact: capsolver-linux-x64
           - os: ubuntu-latest
+            target: bun-linux-x64-baseline
+            artifact: capsolver-linux-x64-baseline
+          - os: ubuntu-latest
             target: bun-linux-arm64
             artifact: capsolver-linux-arm64
           - os: macos-latest
@@ -28,6 +31,9 @@ jobs:
           - os: windows-latest
             target: bun-windows-x64
             artifact: capsolver-windows-x64.exe
+          - os: windows-latest
+            target: bun-windows-x64-baseline
+            artifact: capsolver-windows-x64-baseline.exe
 
     runs-on: ${{ matrix.os }}
     steps:
