@@ -11,7 +11,7 @@ import { solveCommand } from "./commands/solve/index.ts";
 const program = new Command()
   .name("capsolver")
   .description("CapSolver captcha solving CLI")
-  .version("1.0.0")
+  .version("0.1.0")
   .option("--json", "Output raw JSON")
   .option("--quiet", "Output only the solution value")
   .option("--timeout <seconds>", "Polling timeout in seconds", "120")

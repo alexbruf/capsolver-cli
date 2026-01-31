@@ -1,6 +1,6 @@
 {
-  "name": "capsolver-cli",
-  "version": "1.0.0",
+  "name": "@alexbruf/capsolver-cli",
+  "version": "0.1.0",
   "description": "CLI tool for the CapSolver captcha solving API",
   "type": "module",
   "bin": {
