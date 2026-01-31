@@ -98,6 +98,7 @@ describe("capsolver CLI", () => {
     });
     expect(code).toBe(0);
     expect(stdout).toContain("CAP-1234...");
+    expect(stdout).toContain("(from env)");
     expect(stdout).not.toContain("CAP-1234567890ABCDEF");
   });
 
