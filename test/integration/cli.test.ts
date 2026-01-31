@@ -36,7 +36,7 @@ describe("capsolver CLI", () => {
   test("--version shows version", async () => {
     const { stdout, code } = await runCli(["--version"]);
     expect(code).toBe(0);
-    expect(stdout.trim()).toBe("0.1.0");
+    expect(stdout.trim()).toBe("0.1.1");
   });
 
   test("solve --help shows all captcha types", async () => {
