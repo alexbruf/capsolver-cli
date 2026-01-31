@@ -1,0 +1,44 @@
+{
+  "name": "capsolver-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for the CapSolver captcha solving API",
+  "type": "module",
+  "bin": {
+    "capsolver": "src/main.ts"
+  },
+  "files": [
+    "src/**/*.ts",
+    "README.md"
+  ],
+  "keywords": [
+    "capsolver",
+    "captcha",
+    "recaptcha",
+    "turnstile",
+    "cloudflare",
+    "geetest",
+    "cli"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexbruf/capsolver-cli.git"
+  },
+  "scripts": {
+    "dev": "bun run src/main.ts",
+    "build": "bun build src/main.ts --compile --outfile capsolver",
+    "test": "bun test",
+    "test:unit": "bun test test/unit",
+    "test:integration": "bun test test/integration"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3"
+  }
+}
